@@ -1,0 +1,4 @@
+#External Dependencies
+#Sun Nov 21 21:47:11 CST 2010
+/Users/sbendiola/libs/sw33t/cell/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.4/sbt_2.7.7-0.7.4.jar=config.scala
+/Users/sbendiola/libs/sw33t/cell/project/boot/scala-2.7.7/lib/scala-library.jar=config.scala

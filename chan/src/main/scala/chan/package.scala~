@@ -1,0 +1,7 @@
+package sw33t
+
+package object channel {
+  def apply(bufferSize: Int = Int.MaxValue) = {
+    Channel(bufferSize)
+  }
+}

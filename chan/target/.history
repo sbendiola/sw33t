@@ -1,0 +1,18 @@
+~test-compile
+reload
+~test-compile
+update
+~test-compile
+console-quick
+~test-compile
+clean
+~test-compile
+clean
+~test-compile
+reload
+~test-compile
+reload
+update
+~test-compile
+~test-quick *ChannelSpec
+exit

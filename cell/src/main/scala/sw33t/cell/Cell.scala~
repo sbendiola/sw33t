@@ -1,0 +1,80 @@
+package sw33t
+
+import scala.actors.Actor
+import Actor.{actor, react, reply}
+import scala.util.DynamicVariable
+
+object cells {
+
+  implicit def valueFromCell[T](cell: Cell[T]):T = {
+     cell ! Dependent(context.value)
+    (cell !? ReadValue).asInstanceOf[T]
+  }
+
+  val context = new DynamicVariable[Cell[_]](null.asInstanceOf[Cell[_]])
+
+  def cell[T](f: => T) = new Cell[T] {
+    def value = f
+  }
+
+  abstract class Cell[T] extends Actor {
+    def value: T
+    
+    def act {
+      def loop(state: State[T]) {
+        react {
+	  case ReadValue =>
+            context.withValue(this)  {
+	      val v = state.value.getOrElse(state.f())
+	      reply(v)
+	      loop(state.copy(value = Some(v)))
+            }
+
+	  case Dependent(d) =>
+            if (d == null || state.dependents.contains(d)) {
+	      loop(state)
+            } else {
+	      state.notifyDependents
+	      loop(state.copy(dependents = state.dependents + d, value = None))
+            } 
+	    
+	  case Clear =>
+	    state.notifyDependents
+	    reply(Ack)
+	    loop(state.copy(value = None))
+
+	  case Swap(update) => 
+	    state.notifyDependents
+	    reply(Ack)
+	    loop(state.copy(f = update.asInstanceOf[() => T], value = None)) 
+        }
+      }
+      loop(State(value _, None, Set.empty))
+    }
+    
+    def apply(): T = this !? ReadValue match {
+      case v => v.asInstanceOf[T]
+    }
+ 
+    def update(f:  => T) {
+      this !? Swap(() => f)
+    }
+
+    def unset {
+      this ! Clear
+    }
+    start
+  }
+
+  case class State[T](f: () => T, value: Option[T], dependents: Set[Cell[_]]) {
+    def notifyDependents {
+      dependents.foreach { _ !? Clear }
+    }
+  }
+  case object Ack
+  case object ReadValue
+  case object Clear
+  case class Dependent(cell: Cell[_])
+  case class Swap[T](f: () => T)
+}
+

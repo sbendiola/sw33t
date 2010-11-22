@@ -1,0 +1,16 @@
+package sw33t.channel
+
+import org.scalatest.FlatSpec
+import org.scalatest.matchers.ShouldMatchers
+import org.mockito.Mockito
+import org.scalatest.mock.MockitoSugar
+
+class ChannelSpec extends FlatSpec with ShouldMatchers with MockitoSugar {
+  "channels" should "have the correct buffer size" in {
+    Channel.make[Int](100).capacity should be (100)
+  }
+
+  "applying an item" should "add it to the queue" in {
+    mock[Queue[Int]]
+  }
+}

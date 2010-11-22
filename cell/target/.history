@@ -1,0 +1,14 @@
+~test-compile
+console
+~test-compile
+console
+compile
+~compile
+exit
+~test-compile
+console
+~test-quick *CellsSpec
+reload
+update
+~test-quick *CellsSpec
+exit

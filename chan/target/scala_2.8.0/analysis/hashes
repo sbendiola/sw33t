@@ -1,0 +1,6 @@
+#Source Hashes
+#Sun Nov 07 15:57:06 CST 2010
+src/main/scala/chan/Queue.scala=036490b0805efb8e3e2c32e009869de3da15a836
+src/main/scala/chan/Channel.scala=1aa91185a435a7166ceb0e7786fb2f2f60455f97
+src/main/scala/chan/QueueProvider.scala=1e438a952e286c2f48a7d1cdbf458d66ce318006
+src/main/scala/chan/ChannelContext.scala=2d9df341cf41130baaf664a19fc99ed460f0aed6

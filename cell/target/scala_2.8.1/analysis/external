@@ -1,0 +1,4 @@
+#External Dependencies
+#Sun Nov 21 22:18:26 CST 2010
+/Users/sbendiola/libs/sw33t/cell/project/boot/scala-2.8.1/lib/scala-library.jar=src/main/scala/sw33t/cell/Cell.scala
+/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar=src/main/scala/sw33t/cell/Cell.scala

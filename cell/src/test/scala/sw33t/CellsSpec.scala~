@@ -1,0 +1,7 @@
+package sw33t.cells
+
+import org.scalatest.FlatSpec
+import org.scalatest.matchers.ShouldMatchers
+
+class CellsSpec extends FlatSpec with ShouldMatchers {
+}

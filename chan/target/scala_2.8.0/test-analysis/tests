@@ -1,0 +1,3 @@
+#Tests
+#Sun Nov 07 15:55:08 CST 2010
+src/test/scala/chan/ChannelSpec.scala=sw33t.channel.ChannelSpec<<org.scalatest.Suite

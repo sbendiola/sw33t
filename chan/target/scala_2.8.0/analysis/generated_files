@@ -1,0 +1,6 @@
+#Generated Classes
+#Sun Nov 07 15:57:06 CST 2010
+src/main/scala/chan/Queue.scala=target/scala_2.8.0/classes/sw33t/channel/Queue.class
+src/main/scala/chan/Channel.scala=target/scala_2.8.0/classes/sw33t/channel/Channel$.class\:target/scala_2.8.0/classes/sw33t/channel/Channel.class
+src/main/scala/chan/QueueProvider.scala=target/scala_2.8.0/classes/sw33t/channel/QueueProvider.class\:target/scala_2.8.0/classes/sw33t/channel/QueueProvider$class.class\:target/scala_2.8.0/classes/sw33t/channel/QueueProvider$$anon$1.class
+src/main/scala/chan/ChannelContext.scala=target/scala_2.8.0/classes/sw33t/channel/ChannelContext.class\:target/scala_2.8.0/classes/sw33t/channel/ChannelContext$class.class

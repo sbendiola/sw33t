@@ -1,0 +1,3 @@
+#Tests
+#Sun Nov 21 22:18:28 CST 2010
+src/test/scala/sw33t/CellsSpec.scala=sw33t.CellsSpec<<org.scalatest.Suite

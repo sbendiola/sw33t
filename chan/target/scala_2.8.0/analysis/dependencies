@@ -1,0 +1,6 @@
+#Source Dependencies
+#Sun Nov 07 15:57:06 CST 2010
+src/main/scala/chan/Queue.scala=src/main/scala/chan/QueueProvider.scala\:src/main/scala/chan/Channel.scala
+src/main/scala/chan/Channel.scala=src/main/scala/chan/ChannelContext.scala
+src/main/scala/chan/QueueProvider.scala=src/main/scala/chan/Channel.scala\:src/main/scala/chan/ChannelContext.scala
+src/main/scala/chan/ChannelContext.scala=src/main/scala/chan/Channel.scala

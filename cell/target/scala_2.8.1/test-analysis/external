@@ -1,0 +1,6 @@
+#External Dependencies
+#Sun Nov 21 22:18:28 CST 2010
+/Users/sbendiola/libs/sw33t/cell/project/boot/scala-2.8.1/lib/scala-library.jar=src/test/scala/sw33t/CellsSpec.scala
+/Users/sbendiola/libs/sw33t/cell/target/scala_2.8.1/classes/sw33t/cells$.class=src/test/scala/sw33t/CellsSpec.scala
+/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar=src/test/scala/sw33t/CellsSpec.scala
+/Users/sbendiola/libs/sw33t/cell/lib_managed/scala_2.8.1/compile/scalatest-1.2.jar=src/test/scala/sw33t/CellsSpec.scala

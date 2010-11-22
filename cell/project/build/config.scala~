@@ -1,0 +1,4 @@
+import sbt._
+
+class config(info: ProjectInfo) extends DefualtProject(info) {
+}

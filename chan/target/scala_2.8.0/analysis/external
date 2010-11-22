@@ -1,0 +1,4 @@
+#External Dependencies
+#Sun Nov 07 15:57:06 CST 2010
+/Users/sbendiola/libs/sw33t/chan/project/boot/scala-2.8.0/lib/scala-library.jar=src/main/scala/chan/QueueProvider.scala\:src/main/scala/chan/Channel.scala\:src/main/scala/chan/ChannelContext.scala
+/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar=src/main/scala/chan/QueueProvider.scala\:src/main/scala/chan/Channel.scala
